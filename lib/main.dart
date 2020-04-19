@@ -70,9 +70,7 @@ class RandomWordsState extends State<RandomWords> {
   }
 
   Widget _buildSuggestions() {
-    final wordPair = (generateWordPairs(
-      top: 30
-    )).take(10);
+    final wordPair = (generateWordPairs()).take(10);
 
     return ListView.builder(
         padding: const EdgeInsets.all(16),
